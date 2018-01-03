@@ -29,6 +29,9 @@ function addListenerToButtons (redcar, bluecar, selectcar, allcar) {
   redcar.addEventListener('click', function () {
     ajax('GET', 'backend.php?color="Red"', null, appendTable)
   });
+  bluecar.addEventListener('click', function () {
+    ajax('GET', 'backend.php?color="Blue"', null, appendTable)
+  });
 }
 
 function ajax (method, url, data, callback) {
