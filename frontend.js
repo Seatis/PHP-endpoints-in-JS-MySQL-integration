@@ -7,5 +7,6 @@ function ajax (method, url, data, callback) {
     }
   });
   xhr.open(method, url);
+  xhr.setRequestHeader("Content-Type", "application/json");
   xhr.send(data);
 }
