@@ -23,7 +23,9 @@ function appendTable(result){
 }
 
 function addListenerToButtons (redcar, bluecar, selectcar, allcar) {
-  
+  allcar.addEventListener('click', function () {
+    ajax('GET', 'backend.php', null, appendTable)
+  });
 }
 
 function ajax (method, url, data, callback) {
