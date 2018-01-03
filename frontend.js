@@ -54,3 +54,8 @@ function ajax (method, url, data, callback) {
   xhr.setRequestHeader("Content-Type", "application/json");
   xhr.send(data);
 }
+
+function start () {
+  addListenerToButtons(btnRedcar, btnBluecar, selectCar, btnAll);
+  ajax('GET', 'backend.php', null, appendTable);
+}
