@@ -63,3 +63,5 @@ function start () {
   addListenerToButtons(btnRedcar, btnBluecar, selectCar, btnAll);
   ajax('GET', 'backend.php', null, appendTable);
 }
+
+start();
