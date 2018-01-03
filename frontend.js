@@ -56,6 +56,10 @@ function ajax (method, url, data, callback) {
 }
 
 function start () {
+  var btnRedcar = document.querySelector('button.btn-redcar');
+  var btnBluecar = document.querySelector('button.btn-bluecar');
+  var selectCar = document.querySelector('select');
+  var btnAll = document.querySelector('button.btn-all');
   addListenerToButtons(btnRedcar, btnBluecar, selectCar, btnAll);
   ajax('GET', 'backend.php', null, appendTable);
 }
