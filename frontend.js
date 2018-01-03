@@ -22,6 +22,10 @@ function appendTable(result){
   }, this);
 }
 
+function addListenerToButtons (redcar, bluecar, selectcar, allcar) {
+  
+}
+
 function ajax (method, url, data, callback) {
   var xhr = new XMLHttpRequest();
   xhr.addEventListener("readystatechange", function () {
